@@ -15,7 +15,8 @@
 <nav class="navbar navbar-expand-md navbar-dark" style="background-color: AliceBlue">
 <div>
 <a href="http://localhost:8085/VolunteeringApp/viewEvent.jsp" class="navbar-brand">Home</a>
-<h1 style="text-align:center;font-size:30px;font-family:Arial">Welcome to Volunteering App</h1>
+<h1 style="font-size:20px;font-family:Arial">Hi Admin,</h1>
+<h1 style="text-align:center;font-size:20px;font-family:Arial">Welcome to the Edit Event Page!</h1>
 </div>
 </ul>
 </nav>
@@ -44,21 +45,25 @@ Edit Event
 <input type="hidden" date="oriDate" value="<c:out value='${events.date}' />" />
 </c:if>
 <fieldset class="form-group">
-<label style="font-family:Calibri">Date</label> <input type="text" value="<c:out value='${events.date}' />" class="form-control" name="date" required="required">
+<label style="font-family:Calibri">New Event Date:</label> <input type="text" value="<c:out value='${events.date}' />" class="form-control" name="date" required="required">
 </fieldset>
 <fieldset class="form-group">
-<label style="font-family:Calibri">Location</label> <input type="text" value="<c:out value='${events.location}' />" class="form-control" name="location">
+<label style="font-family:Calibri">New Event Location:</label> <input type="text" value="<c:out value='${events.location}' />" class="form-control" name="location">
 </fieldset>
 <fieldset class="form-group">
-<label style="font-family:Calibri">Event Description</label> <input type="text" value="<c:out value='${events.eventDescription}' />" class="form-control" name="eventDescription">
+<label style="font-family:Calibri">New Event Description:</label> <input type="text" value="<c:out value='${events.eventDescription}' />" class="form-control" name="eventDescription">
 </fieldset>
 <fieldset class="form-group">
-<label style="font-family:Calibri">Commitment</label> <input type="text" value="<c:out value='${events.commitment}' />" class="form-control" name="commitment">
+<label style="font-family:Calibri">New Commitment Days:</label> <input type="text" value="<c:out value='${events.commitment}' />" class="form-control" name="commitment">
 </fieldset>
 <fieldset class="form-group">
-<label style="font-family:Calibri">Recruitment End Date</label> <input type="text" value="<c:out value='${events.endDate}' />" class="form-control" name="endDate">
+<label style="font-family:Calibri">New Recruitment End Date:</label> <input type="text" value="<c:out value='${events.endDate}' />" class="form-control" name="endDate">
+</fieldset>
+<fieldset class="form-group">
+<label style="font-family:Calibri">New Contact Person:</label> <input type="text" value="<c:out value='${events.endDate}' />" class="form-control" name="endDate">
 </fieldset>
 <br>
+<p style="font-size:15px;color:red;font-family:Calibri"><b>By clicking save, the information of the event will be updated and save.</b></p>
 <button type="submit" class="btn btn-success">Save</button>
 </form>
 </div>
